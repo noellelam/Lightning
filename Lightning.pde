@@ -3,18 +3,43 @@ void setup()
   size(500,500);
   background(70, 115, 150);
   strokeWeight(1.5);
-  
+
+
 }
 void draw()
 {
+
+  
 int x = 0;
 
-int cloud = 0;
 
-int startX = 0;
-int startY = 250;
-int endX = 0;
-int endY = 250;
+
+int startX = 250;
+int startY = 0;
+int endX = 250;
+int endY = 0;
+  
+stroke((int)(Math.random()*100));
+
+//lightning 
+while (endX<=500) {
+  
+  endX= startX + (int)(Math.random()*2);
+  endY = startY + (int)(Math.random()*5);
+  
+
+  line (startX, startY, endX, endY);
+  
+  startX = endX;
+  startY = endY;
+  
+
+
+}
+  
+
+
+//car 
 
 
 //house 
@@ -28,7 +53,7 @@ rect (200, 300, 100, 100);
 fill (90, 70, 10);
 triangle(250, 250, 175, 315, 325, 315);
 
-while (x < 550) {
+while (x <= 550) {
   
   fill (100);
   
@@ -45,5 +70,9 @@ while (x < 550) {
 void mousePressed()
 {
 
-}
+  int startX = 250;
+  int startY = 0;
+  int endX = 250;
+  int endY = 0;
 
+}
