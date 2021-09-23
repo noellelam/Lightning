@@ -2,8 +2,8 @@ void setup()
 {
   size(500,500);
   //background(70, 115, 150);
-  
-  strokeWeight(20);
+  background(30, 30, 30);  
+
  
  frameRate(3.5);
 }
