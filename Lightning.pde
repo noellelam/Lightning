@@ -6,11 +6,13 @@ void setup()
   strokeWeight(20);
  
  frameRate(3.5);
+ 
+  background(0, 0, 0);
 }
 void draw()
 {
 
- background(0, 0, 0, 10);
+ background(0, 0, 0, 85);
  
  
 
@@ -52,7 +54,8 @@ if (mousePressed) {
 
 
 //mountain
-stroke (100,100,100,25);
+//stroke (100,100,100,25);
+noStroke();
 fill(80);
 triangle (350,175,150,350,525,350);
 triangle (125, 175, -25, 350, 300,350);
