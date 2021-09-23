@@ -2,15 +2,15 @@ void setup()
 {
   size(500,500);
   //background(70, 115, 150);
-  background(30, 30, 30);  
-
+  
+  strokeWeight(20);
  
  frameRate(3.5);
 }
 void draw()
 {
 
- background(30, 30, 30, 10);
+ background(0, 0, 0, 10);
  
  
 
@@ -109,7 +109,6 @@ ellipse (415, 350, 100,125);
   
   
 }
-
 
 
 
